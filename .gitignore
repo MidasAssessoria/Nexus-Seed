@@ -1,0 +1,19 @@
+# Auto-generated backups from hooks
+.backup/
+.audit-backup-*/
+
+# Local permissions (personal, do not version)
+.claude/settings.local.json
+.claude/settings.local.json.pre-plan-reference
+
+# Temporary artifacts
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Node (in case skills need it)
+node_modules/
+
+# Logs
+*.log

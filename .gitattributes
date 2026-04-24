@@ -1,0 +1,31 @@
+# Default: normalize to LF in the repo for any file detected as text.
+# eol=lf also ensures the working tree stays LF (overrides core.autocrlf).
+* text=auto eol=lf
+
+# Explicit entries for the project's formats — avoids heuristics and makes behavior obvious.
+*.md    text eol=lf
+*.js    text eol=lf
+*.mjs   text eol=lf
+*.cjs   text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.sh    text eol=lf
+*.gitattributes text eol=lf
+*.gitignore     text eol=lf
+
+# Windows scripts need CRLF to execute in cmd.exe.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binaries: never convert.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.webp binary
+*.pdf  binary
+*.zip  binary
+*.gz   binary
